@@ -1,0 +1,146 @@
+@charset "utf-8";
+/*公共样式*/
+* {
+    padding: 0px;
+    margin: 0px auto;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: #333;
+}
+/*头部*/
+.newHead {
+    height: 30px;
+    width: 100%;
+    background: #111;
+
+    .headcontain {
+        width: 94%;
+
+        /**左边logo**/
+
+
+        .yinyueLogo {
+            float: left;
+            background: url(../../imges/yinLogo.png);
+            height: 30px;
+            width: 5%;
+            margin-left: 1.5%;
+
+        }
+
+        /*右边*/
+        .newTitle {
+            position: relative;
+            font-size: 12px;
+            color: #9B9B9C;
+            line-height: 30px;
+            margin-left: 67%;
+
+            //扫一扫
+            .scan {
+                font-size: 14px;
+                color: #ff2c72;
+                margin-top: -12px;
+            }
+
+            //了解最新商品信
+            .scanMore {
+                font-size: 14px;
+                color: #1f2021;
+                margin-top: -11px;
+            }
+
+            /*官方微博*/
+            .sina {
+                position: absolute;
+                top: 0;
+                width: 35%;
+                text-align: center;
+                z-index: 100;
+                cursor: pointer;
+                padding: 0 10px;
+
+                img {
+                    width: 100%;
+
+                }
+
+                //隐藏
+
+                .popsina {
+                    display: none;
+                }
+
+                //显示
+                &:hover div {
+                    display: block;
+                    background: #fff;
+                }
+            }
+
+            //span
+            // .newTitle span {
+            //     margin-left: 42px;
+            //     cursor: pointer;
+            // }
+
+            .newSeparat1 {
+                color: #2f3031;
+                font-weight: bold;
+                position: absolute;
+                left: 37%;
+            }
+
+            /*关注微信*/
+            .weixin {
+                position: absolute;
+                top: 0;
+                width: 35%;
+                text-align: center;
+                left: 36%;
+                z-index: 100;
+                padding: 0 10px;
+                cursor: pointer;
+
+                //显示
+                &:hover div {
+                    display: block;
+                    background: #fff;
+                }
+
+                //隐藏
+                .popweixin {
+                    display: none;
+                }
+            }
+
+            .newSeparat2 {
+                color: #2f3031;
+                font-weight: bold;
+                position: absolute;
+                left: 69%;
+            }
+
+            /*正品保证*/
+            .zhengpin {
+                position: absolute;
+                top: 0;
+                left: 77%;
+                cursor: pointer;
+
+                a {
+                    color: #9B9B9C;
+                }
+            }
+        }
+
+    }
+
+}
+//搜索框
+.header{
+    width: 84%;
+}
