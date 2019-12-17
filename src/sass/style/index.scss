@@ -492,11 +492,13 @@ a {
             .slick-prev {
                 right: 23%;
                 background-position: 0px -16px;
+                outline: none;
             }
 
             .slick-next {
                 background-position: -12px -16px;
                 right: 19%;
+                outline: none;
             }
 
             //原点

@@ -302,10 +302,12 @@ a {
   border: 0; }
 .sceneBox .sceneBox_main .slick .slick-prev {
   right: 23%;
-  background-position: 0px -16px; }
+  background-position: 0px -16px;
+  outline: none; }
 .sceneBox .sceneBox_main .slick .slick-next {
   background-position: -12px -16px;
-  right: 19%; }
+  right: 19%;
+  outline: none; }
 .sceneBox .sceneBox_main .slick .slick-dots {
   display: block;
   text-align: center;
