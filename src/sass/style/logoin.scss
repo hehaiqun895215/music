@@ -1,0 +1,236 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.dialog {
+    margin-left: -25%;
+    margin-top: -190px;
+    width: 60%;
+    height: 380px;
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 0 15px #000;
+    border: 1px solid #ececec;
+
+    //登录
+    .login-register {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 380px;
+        background-color: #fff;
+        overflow: hidden;
+
+        //背景图
+        .login-image {
+            background-image: url(../../imges/login.jpg);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: bottom center;
+
+        }
+
+        //内容
+        .login-view {
+            position: absolute;
+            width: 50%;
+            right: 60px;
+            top: 0;
+            z-index: 2;
+            font-size: 12px;
+
+            .login-tab {
+                font-size: 20px;
+                color: #474c56;
+                line-height: 72px;
+                height: 72px;
+
+                a {
+                    float: left;
+                    width: 50%;
+                    text-align: center;
+                    height: 71px;
+                    color: #474c56;
+                }
+
+                .login-active {
+                    height: 70px;
+                    color: #27d5bf;
+                    border-bottom: 2px solid #27d5bf;
+                }
+            }
+
+            //登录注册
+            .login-error-tips {
+                margin: 5px 0;
+                height: 20px;
+                line-height: 20px;
+                color: #ff6699;
+
+            }
+
+            //输入信息
+            .login-main-active {
+                display: block;
+
+                .inter-content {
+
+                    //左边地址信息
+                    .area-code-content {
+                        position: relative;
+                        display: block;
+                        padding: 0 3%;
+                        width: 20%;
+                        text-align: center;
+                        float: left;
+                        background: url(../../imges/xiaobiaoqian.png) no-repeat;
+                        background-position: 98% center;
+                        cursor: pointer;
+                        z-index: 10;
+                        border: solid 1px #e1e1e7;
+                        height: 38px;
+                        line-height: 38px;
+                        border-right: 0;
+                        background-color: #fff;
+
+                        .country-name {
+                            color: rgba(117, 117, 117, 1);
+                        }
+
+
+                    }
+
+                    display: flex;
+                }
+
+                .login-text-long {
+                    width: 95%;
+                    margin-bottom: 15px;
+                }
+
+                //框子信息
+                .login-text-long,
+                .login-text-short {
+                    outline: none;
+                    padding: 10px;
+                    line-height: 18px;
+                    border: 1px solid #e1e1e7;
+                    background-color: #fff;
+                    border-radius: 3px;
+                    box-sizing: content-box;
+                }
+            }
+
+            .login-fun-wrap {
+                margin-bottom: 15px;
+
+                //选择框
+                input {
+                    vertical-align: middle;
+                    margin-right: 5px;
+                }
+
+                //自动登录
+                span {
+                    vertical-align: middle;
+                    position: relative;
+                    top: -1px;
+                    line-height: 14px;
+                    color: #999;
+                }
+
+                //忘记密码
+                .login-forget {
+                    float: right;
+                    color: #999;
+                }
+            }
+        }
+
+        //登陆键
+        .login-submit {
+            border: none;
+            outline: none;
+            cursor: pointer;
+            margin-bottom: 15px;
+            background-color: #27d5bf;
+            color: #fff;
+            font-size: 18px;
+            height: 40px;
+            line-height: 40px;
+            width: 100%;
+            border-radius: 3px;
+            overflow: visible;
+        }
+
+        //第三方登录
+        .login-third-wrap {
+            margin: 15px 0;
+
+            span {
+                float: left;
+                width: 25%;
+                text-align: center;
+                color: #999;
+            }
+
+            a {
+                background-image: url(../../imges/xiaochengxu.png);
+                background-repeat: no-repeat;
+                font-size: 0;
+                overflow: hidden;
+            }
+
+            .ui-login-weibo {
+                background-position: 0 -159px;
+                height: 24px;
+                width: 29px;
+            }
+
+            .ui-login-weixin {
+                background-position: 0 -226px;
+                height: 23px;
+                width: 28px;
+            }
+
+            .ui-login-qq {
+                background-position: 0 -52px;
+                height: 23px;
+                width: 22px;
+            }
+
+            .ui-login-arrow,
+            .ui-login-weibo,
+            .ui-login-weixin,
+            .ui-login-qq {
+                display: inline-block;
+                cursor: pointer;
+                vertical-align: middle;
+            }
+        }
+
+    }
+//关闭
+    .close {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        width: 20px;
+        height: 18px;
+        color: #999;
+        background-position: 0 -620px;
+    }
+}

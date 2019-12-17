@@ -13,7 +13,7 @@
         }
         img[index].style.display = 'block';
     }
-    timer = setInterval(autoplay, 2000);// 定义并调用自动播放函数
+    timer = setInterval(autoplay, 2000);// 定义定时器并调用自动播放函数
     banner.onmouseover = () => {
         clearInterval(timer);//鼠标悬停图片静止，移除时间函数
     };

@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none; }
+
+.dialog {
+  margin-left: -25%;
+  margin-top: -190px;
+  width: 60%;
+  height: 380px;
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 0 15px #000;
+  border: 1px solid #ececec; }
+.dialog .login-register {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 380px;
+  background-color: #fff;
+  overflow: hidden; }
+.dialog .login-register .login-image {
+  background-image: url(../../imges/login.jpg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center; }
+.dialog .login-register .login-view {
+  position: absolute;
+  width: 50%;
+  right: 60px;
+  top: 0;
+  z-index: 2;
+  font-size: 12px; }
+.dialog .login-register .login-view .login-tab {
+  font-size: 20px;
+  color: #474c56;
+  line-height: 72px;
+  height: 72px; }
+.dialog .login-register .login-view .login-tab a {
+  float: left;
+  width: 50%;
+  text-align: center;
+  height: 71px;
+  color: #474c56; }
+.dialog .login-register .login-view .login-tab .login-active {
+  height: 70px;
+  color: #27d5bf;
+  border-bottom: 2px solid #27d5bf; }
+.dialog .login-register .login-view .login-error-tips {
+  margin: 5px 0;
+  height: 20px;
+  line-height: 20px;
+  color: #ff6699; }
+.dialog .login-register .login-view .login-main-active {
+  display: block; }
+.dialog .login-register .login-view .login-main-active .inter-content {
+  display: flex; }
+.dialog .login-register .login-view .login-main-active .inter-content .area-code-content {
+  position: relative;
+  display: block;
+  padding: 0 3%;
+  width: 20%;
+  text-align: center;
+  float: left;
+  background: url(../../imges/xiaobiaoqian.png) no-repeat;
+  background-position: 98% center;
+  cursor: pointer;
+  z-index: 10;
+  border: solid 1px #e1e1e7;
+  height: 38px;
+  line-height: 38px;
+  border-right: 0;
+  background-color: #fff; }
+.dialog .login-register .login-view .login-main-active .inter-content .area-code-content .country-name {
+  color: #757575; }
+.dialog .login-register .login-view .login-main-active .login-text-long {
+  width: 95%;
+  margin-bottom: 15px; }
+.dialog .login-register .login-view .login-main-active .login-text-long, .dialog .login-register .login-view .login-main-active .login-text-short {
+  outline: none;
+  padding: 10px;
+  line-height: 18px;
+  border: 1px solid #e1e1e7;
+  background-color: #fff;
+  border-radius: 3px;
+  box-sizing: content-box; }
+.dialog .login-register .login-view .login-fun-wrap {
+  margin-bottom: 15px; }
+.dialog .login-register .login-view .login-fun-wrap input {
+  vertical-align: middle;
+  margin-right: 5px; }
+.dialog .login-register .login-view .login-fun-wrap span {
+  vertical-align: middle;
+  position: relative;
+  top: -1px;
+  line-height: 14px;
+  color: #999; }
+.dialog .login-register .login-view .login-fun-wrap .login-forget {
+  float: right;
+  color: #999; }
+.dialog .login-register .login-submit {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+  background-color: #27d5bf;
+  color: #fff;
+  font-size: 18px;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  border-radius: 3px;
+  overflow: visible; }
+.dialog .login-register .login-third-wrap {
+  margin: 15px 0; }
+.dialog .login-register .login-third-wrap span {
+  float: left;
+  width: 25%;
+  text-align: center;
+  color: #999; }
+.dialog .login-register .login-third-wrap a {
+  background-image: url(../../imges/xiaochengxu.png);
+  background-repeat: no-repeat;
+  font-size: 0;
+  overflow: hidden; }
+.dialog .login-register .login-third-wrap .ui-login-weibo {
+  background-position: 0 -159px;
+  height: 24px;
+  width: 29px; }
+.dialog .login-register .login-third-wrap .ui-login-weixin {
+  background-position: 0 -226px;
+  height: 23px;
+  width: 28px; }
+.dialog .login-register .login-third-wrap .ui-login-qq {
+  background-position: 0 -52px;
+  height: 23px;
+  width: 22px; }
+.dialog .login-register .login-third-wrap .ui-login-arrow, .dialog .login-register .login-third-wrap .ui-login-weibo, .dialog .login-register .login-third-wrap .ui-login-weixin, .dialog .login-register .login-third-wrap .ui-login-qq {
+  display: inline-block;
+  cursor: pointer;
+  vertical-align: middle; }
+.dialog .close {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 20px;
+  height: 18px;
+  color: #999;
+  background-position: 0 -620px; }
+
+/*# sourceMappingURL=logoin.css.map */

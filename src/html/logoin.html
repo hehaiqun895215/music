@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="../sass/css/logoin.css">
+    <script src="../script/ajaxpromise.js"></script>
+    <script src="../script/logoin.js"></script>
+</head>
+
+<body>
+    <div class="dialog">
+        <div class="login-register" style="display: block;">
+            <div class="login-image login-image-transition"></div>
+            <div class="login-view">
+                <div class="login-tab">
+                    <a href="http://127.0.0.1:8080/1911/music/src/html/logoin.html" class="login-active">登录</a>
+                    <a href="http://127.0.0.1:8080/1911/music/src/html/reg.html">注册</a>
+                </div>
+
+                <div class="login-main login-main-active" id="login-area">
+                    <form id="login-form" action="http://login.yinyuetai.com/v2/login" method="post">
+                        <div class="login-error-tips"></div>
+                        <div class="inter-content inter-content-login">
+                            <div class="area-code-content">
+                                <span class="country-name" data-code="">中国</span>
+
+                            </div>
+                            <input type="text" name="phone" class="login-text-long" id="user" placeholder="请输入手机号码或邮箱">
+                        </div>
+                        <div>
+                            <input type="password" class="login-text-long" id="password" placeholder="请输入密码">
+                        </div>
+                        <div class="login-fun-wrap">
+                            <label class="login-auto">
+                                <input type="checkbox" name="autologin" checked="">
+                                <span>自动登录</span>
+                            </label>
+                            <a href="//login.yinyuetai.com/forgot-password" target="_blank" class="login-forget">忘记密码</a>
+                        </div>
+                        <input type="submit" value="登录" class="login-submit">
+                    </form>
+                    <div id="other-login">
+                        <div class="login-third-wrap">
+                            <span class="third-text">第三方登录:</span>
+                            <span>
+                                <a href="//login.yinyuetai.com/api/login/sina-auth" target="_blank" class="ui-login-weibo">新浪登录</a>
+                            </span>
+                            <span>
+                                <a href="//login.yinyuetai.com/api/login/wechat-auth" target="_blank" class="ui-login-weixin">微信登录</a>
+                            </span>
+                            <span>
+                                <a href="//login.yinyuetai.com/api/login/qq-auth" target="_blank" class="ui-login-qq">QQ登录</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <a href="javascript:void(0);" class="close">x</a>
+    </div>
+
+</body>
+
+</html>

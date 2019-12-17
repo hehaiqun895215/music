@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="../sass/css/reg.css">
+</head>
+
+<body>
+    <div class="dialog">
+        <div class="login-register" style="display: block;">
+            <div class="login-image login-image-transition"></div>
+            <div class="login-view">
+                <div class="login-tab">
+                    <a href="http://127.0.0.1:8080/1911/music/src/html/logoin.html" >登录</a>
+                    <a href="http://127.0.0.1:8080/1911/music/src/html/reg.html"class="login-active">注册</a>
+                </div>
+                <div class="login-main login-main-active" id="login-area">
+                    <form id="login-form" action="http://login.yinyuetai.com/v2/login" method="post">
+                        <div class="login-error-tips"></div>
+                        <div class="inter-content inter-content-login">
+                            <div class="area-code-content">
+                                <span class="country-name" data-code="">中国</span>
+                             
+                            </div>
+                            <input type="text" name="phone" class="login-text-long" id="phone" placeholder="请输入手机号码">
+                           
+                        </div>
+                        <div>
+                            <input type="password" class="login-text-long" id="password" placeholder="密码为6-20位字符，支持大小写码">
+                           
+                        </div>
+                        <div class="login-code-wrap">
+                            <input type="text" name="code" class="login-text-short" placeholder="请输入验证码">
+                            <input type="button" class="login-get-code" value="获取验证码">
+                        </div>
+                        <input type="submit" value="立即注册" class="login-submit">
+                    </form>
+                    <div class="login-fun-wrap">
+                        <label class="login-auto">
+                            <input type="checkbox" name="agree" checked="">
+                            <span>我已阅读并同意
+                                <a href="//www.yinyuetai.com/article/45" target="_blank">《音悦Tai服务条款》</a>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../script/register.js"></script>
+</body>
+
+</html>
