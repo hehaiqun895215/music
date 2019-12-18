@@ -1,8 +1,8 @@
 
-(function () {
+import {ajax} from './ajaxpromise.js';
     class Render {//渲染
         constructor() {
-            this.goodslist = document.querySelector('.goodsList_new');
+        this. goodslist = document.querySelector('.goodsList_new');
         }
         init() {//接口
             let _this=this;//改变指向
@@ -10,7 +10,6 @@
                 url: 'http://localhost:8080/1911/music/php/indexrender.php',
                 dataType: 'json'
             }).then(function (data) {
-                
                 //遍历render
                 let strhtml='<ul>';
                 for(let value of data){
@@ -37,5 +36,5 @@
             });
         }
     }
-    new Render().init();
-})();
+    export{Render}
+    

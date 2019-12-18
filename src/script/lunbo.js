@@ -1,8 +1,8 @@
-(function () {
-    banner = document.querySelector('.banner');
-    img = document.getElementsByClassName("slide");
-    timer = 0;
-    this.index = 0;
+var lunb = (function () {
+    let banner = document.querySelector('.banner');
+    let img = document.getElementsByClassName("slide");
+    let timer = 0;
+    let index = 0;
     function autoplay() {//设置自动播放函数
         index++;
         if (index >= img.length) {
@@ -21,4 +21,6 @@
         timer = setInterval(autoplay, 2000);//鼠标离开后重启时间函数，图片移动
     };
 
-})();
+})()
+
+export { lunb }

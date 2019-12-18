@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/**/
 /*公共样式*/
 * {
   padding: 0px;
@@ -117,7 +118,7 @@ a {
 .bar_bg .shopBar .shop_search {
   position: relative;
   float: left;
-  margin: 45px 0 0 17%;
+  margin: 45px 0 0 13%;
   width: 39%;
   height: 38px;
   background: url(../../imges/search_icon.png) no-repeat -1px -44px; }
@@ -256,15 +257,14 @@ a {
   font-size: 14px;
   line-height: 77px; }
 .centerBox_detail .goodsBox_Pic {
-  float: left; }
+  float: left;
+  width: 53%; }
 .centerBox_detail .goodsBox_Pic .goodsPic {
-  width: 420px;
+  width: 90%;
   height: 420px;
   border: 1px solid #e5e5e5; }
 .centerBox_detail .goodsBox_Pic .goodsPic img {
-  width: 100%;
-  margin-left: 0px;
-  margin-top: 17.5px; }
+  width: 100%; }
 .centerBox_detail .goodsBox_Pic .operateBox {
   position: relative;
   padding: 20px 0 10px;
@@ -328,9 +328,9 @@ a {
 .centerBox_detail .goodsBox_info {
   position: relative;
   float: left;
+  width: 40%;
   margin-left: 25px;
   padding-right: 15px;
-  width: 425px;
   min-height: 508px;
   border-right: 1px solid #ddd; }
 .centerBox_detail .goodsBox_info .goodsTitle {
@@ -393,16 +393,16 @@ a {
   text-align: center;
   font-size: 14px; }
 .centerBox_detail .goodsBox_info .divbtns .btnBox .addToCart {
-  width: 170px;
+  width: 54%;
   height: 50px;
   background: url(../../imges/detail_btn.png) no-repeat -10px -10px;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 1%;
   border: none;
   outline: none; }
 .centerBox_detail .goodsBox_info .divbtns .btnBox .buyNow {
-  margin-right: 10px;
-  width: 170px;
+  margin-right: 1%;
+  width: 54%;
   height: 50px;
   background: url(../../imges/detail_btn.png) no-repeat -10px -68px;
   cursor: pointer;
@@ -410,7 +410,7 @@ a {
   outline: none; }
 .centerBox_detail .goodsBox_info .divbtns .divzpbz {
   background: url(../../imges/zpbz.png) no-repeat;
-  width: 201px;
+  width: 100%;
   height: 18px; }
 
 /*# sourceMappingURL=details.css.map */

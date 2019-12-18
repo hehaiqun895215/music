@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/**/
 /*公共样式*/
 * {
     padding: 0px;
@@ -185,7 +186,7 @@ a {
         .shop_search {
             position: relative;
             float: left;
-            margin: 45px 0 0 17%;
+            margin: 45px 0 0 13%;
             width: 39%;
             height: 38px;
             background: url(../../imges/search_icon.png) no-repeat -1px -44px;
@@ -430,17 +431,18 @@ a {
     //左边内容
     .goodsBox_Pic {
         float: left;
+        width: 53%;
 
         .goodsPic {
-            width: 420px;
+            width: 90%;
             height: 420px;
             border: 1px solid #e5e5e5;
 
             img {
 
                 width: 100%;
-                margin-left: 0px;
-                margin-top: 17.5px;
+                // margin-left: 0px;
+                // margin-top: 17.5px;
 
             }
         }
@@ -546,9 +548,10 @@ a {
     .goodsBox_info {
         position: relative;
         float: left;
+        width:40%;
         margin-left: 25px;
         padding-right: 15px;
-        width: 425px;
+        // width: 425px;
         min-height: 508px;
         border-right: 1px solid #ddd;
 
@@ -640,18 +643,18 @@ a {
         .divbtns {
             .btnBox {
                 .addToCart {
-                    width: 170px;
+                    width: 54%;
                     height: 50px;
                     background: url(../../imges/detail_btn.png) no-repeat -10px -10px;
                     cursor: pointer;
-                    margin-right: 10px;
+                    margin-right: 1%;
                     border: none;
                     outline: none;
                 }
 
                 .buyNow {
-                    margin-right: 10px;
-                    width: 170px;
+                    margin-right: 1%;
+                    width: 54%;
                     height: 50px;
                     background: url(../../imges/detail_btn.png) no-repeat -10px -68px;
                     cursor: pointer;
@@ -659,9 +662,10 @@ a {
                     outline: none;
                 }
             }
+
             .divzpbz {
-                background: url(../../imges/zpbz.png) no-repeat ;
-                width: 201px;
+                background: url(../../imges/zpbz.png) no-repeat;
+                width:100%;
                 height: 18px;
             }
 
