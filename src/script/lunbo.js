@@ -3,6 +3,7 @@ var lunb = (function () {
     let img = document.getElementsByClassName("slide");
     let timer = 0;
     let index = 0;
+
     function autoplay() {//设置自动播放函数
         index++;
         if (index >= img.length) {
@@ -20,7 +21,7 @@ var lunb = (function () {
     banner.onmouseout = () => {
         timer = setInterval(autoplay, 2000);//鼠标离开后重启时间函数，图片移动
     };
-
+    
 })()
 
 export { lunb }

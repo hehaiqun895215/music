@@ -7,8 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>登录</title>
     <link rel="stylesheet" href="../sass/css/logoin.css">
-    <script src="../script/ajaxpromise.js"></script>
-    <script src="../script/logoin.js"></script>
 </head>
 
 <body>
@@ -22,27 +20,29 @@
                 </div>
 
                 <div class="login-main login-main-active" id="login-area">
-                    <form id="login-form" action="http://login.yinyuetai.com/v2/login" method="post">
-                        <div class="login-error-tips"></div>
-                        <div class="inter-content inter-content-login">
-                            <div class="area-code-content">
-                                <span class="country-name" data-code="">中国</span>
+                    <!-- <form id="login-form" action="http://login.yinyuetai.com/v2/login" method="post"> -->
+                    <div class="login-error-tips"></div>
+                    <div class="inter-content inter-content-login">
+                        <div class="area-code-content">
+                            <span class="country-name" data-code="">中国</span>
 
-                            </div>
-                            <input type="text" name="phone" class="login-text-long" id="user" placeholder="请输入手机号码或邮箱"><span></span>
                         </div>
-                        <div>
-                            <input type="password" class="login-text-long" id="password" placeholder="请输入密码"><span></span>
-                        </div>
-                        <div class="login-fun-wrap">
-                            <label class="login-auto">
-                                <input type="checkbox" name="autologin" checked="">
-                                <span>自动登录</span>
-                            </label>
-                            <a href="//login.yinyuetai.com/forgot-password" target="_blank" class="login-forget">忘记密码</a>
-                        </div>
-                        <input type="submit" value="登录" class="login-submit" id="btn">
-                    </form>
+                        <input type="text" name="phone" class="login-text-long" id="user" placeholder="请输入手机号码或邮箱">
+                        <span></span>
+                    </div>
+                    <div>
+                        <input type="password" class="login-text-long" id="password" placeholder="请输入密码">
+                        <span></span>
+                    </div>
+                    <div class="login-fun-wrap">
+                        <label class="login-auto">
+                            <input type="checkbox" name="autologin" checked="">
+                            <span>自动登录</span>
+                        </label>
+                        <a href="//login.yinyuetai.com/forgot-password" target="_blank" class="login-forget">忘记密码</a>
+                    </div>
+                    <input type="submit" value="登录" class="login-submit" id="btn">
+                    <!-- </form> -->
                     <div id="other-login">
                         <div class="login-third-wrap">
                             <span class="third-text">第三方登录:</span>
@@ -63,7 +63,7 @@
         </div>
         <a href="javascript:void(0);" class="close">x</a>
     </div>
-
+<script src="../script/logoin.js" ></script>
 </body>
 
 </html>

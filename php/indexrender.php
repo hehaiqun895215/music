@@ -1,4 +1,5 @@
 <?php
+header('Access-Control-Allow-Origin:*');
 include "conn.php";
 $result=$conn->query("select * from musicpic");
 $arr=array();
