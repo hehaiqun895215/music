@@ -6,18 +6,18 @@ header('Access-Control-Allow-Origin:*');
     $phone=$_POST['phone'];
     //验证数据
     $sql = "select * from user where phone='{$phone}'";
-    $result = $mysqli->query($sql);
+    $result = $conn->query($sql);
 
     if($result->num_rows>0){
         echo '{"msg":"用户名已存在"}';
-        $mysqli->close();
+        $conn->close();
         die;
     }
     //插入数据
     $insertSql="insert into user(password,phone) values ('$password','$phone')";
-    $res=$mysqli->query($insertSql);
+    $res=$conn->query($insertSql);
     if($res){
         echo '{"msg":"注册成功"}';
     }
-    $mysqli->close();
+    $conn->close();
 ?>
